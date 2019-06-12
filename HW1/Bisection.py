@@ -6,7 +6,7 @@
 import math
 
 def func(x): 
-    return math.tan(x)
+    return x*x*x-25
    
 
 def bisection(a,b,tol): 
@@ -39,6 +39,6 @@ def bisection(a,b,tol):
               
     print("The value of root is : ","%.4f"%c)
       
-a = 2
-b = 4
-bisection(a, b, 0.00001)
+a = 0
+b = 10
+bisection(a, b, 0.0001)
