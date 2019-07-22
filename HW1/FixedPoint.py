@@ -17,5 +17,5 @@ def fixed_point_iteration(f, p, TOL):
     print(f'Root: {p}\nIterations: {iterations}')
 
 if __name__ == '__main__':
-    f = lambda x: 2*math.sin(math.pi*x)+x
-    fixed_point_iteration(f, 1, 0.0001)
+    f = lambda x: x*x*x + x -1
+    fixed_point_iteration(f, .5, 0.0001)
